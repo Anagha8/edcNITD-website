@@ -60,17 +60,18 @@
 
                         <div class="portfolio-details-container">
                             <div class="portfolio-details-carousel">
-                                <img src="{{ oe.image.url }}" class="img-fluid" style="width: 300px; height: 200px; "
+                                <img src="{{ oe.poster.url }}" class="img-fluid" style="width: 300px; height: 200px; "
                                     alt="">
                             </div>
                         </div>
 
                         <div class="portfolio-description">
                             <h2 style="font-size: 22px;">{{oe.event_name}}</h2>
-                            <p class="pop">
-                                {{oe.about_event}}
-                            </p>
                         </div>
+                        <form action="{% url 'showevent' oe.id %}" method="POST" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-success" style="width: 100px;">View Event</button>
+                        </form>
                     </div>
                     {% if oe.registration_link%}
                     <div class="text-center">
@@ -156,17 +157,18 @@
 
                         <div class="portfolio-details-container">
                             <div class="portfolio-details-carousel">
-                                <img src="{{ ue.image.url }}" class="img-fluid" style="width: 300px; height: 200px; "
+                                <img src="{{ ue.poster.url }}" class="img-fluid" style="width: 300px; height: 200px; "
                                     alt="">
                             </div>
                         </div>
 
                         <div class="portfolio-description">
                             <h2 style="font-size: 22px;">{{ue.event_name}}</h2>
-                            <p class="pop">
-                                {{ue.about_event}}
-                            </p>
                         </div>
+                        <form action="{% url 'showevent' ue.id %}" method="POST" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-success" style="width: 100px;">View Event</button>
+                        </form>
                     </div>
                     {% if ue.registration_link%}
                     <div class="text-center">
@@ -248,17 +250,18 @@
 
                         <div class="portfolio-details-container">
                             <div class="portfolio-details-carousel">
-                                <img src="{{ ae.image.url }}" class="img-fluid" style="width: 300px; height: 200px; "
+                                <img src="{{ ae.poster.url }}" class="img-fluid" style="width: 300px; height: 200px; "
                                     alt="">
                             </div>
                         </div>
 
                         <div class="portfolio-description">
                             <h2 style="font-size: 22px;">{{ae.event_name}}</h2>
-                            <p class="pop">
-                                {{ae.about_event}}
-                            </p>
                         </div>
+                        <form action="{% url 'showevent' ae.id %}" method="POST" class="d-inline">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-success" style="width: 100px;">View Event</button>
+                        </form>
                     </div>
                 </section>
             </div>
