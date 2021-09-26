@@ -1,75 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+.container{
+  min-width: 1500px;
+}
 
-#slider{
-  margin-top:0;
-  padding-top: 0;
+.pad{
+  padding-top: 60px;
 }
-/*.cross{
-  border-radius: 50%;
-  transform: translate(50%,-50%;
-}*/
-:root {
-  --theme-color:#f38b36;
-  --primarycolor: #f3593b;
-  --orange1: #f37157;
-  --maindark: #3a3e3b;
-  --mainwhite: #fff;
-  --maingrey: rgba(255, 255, 255, 0.815);
-  --maintransition: all 0.3s ease-in-out;
-  --letterSpacing: 0.4rem;
-  --blue: #007bff;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-}
-.justify-content-start{
-  padding-top: 50px;
-}
-.container {
 
-    padding-top: 60px;
-    max-width: 1800px;
+.event-name{
+  font-family: 'Scada', sans-serif;
+  font-size: 6rem !important;
+  padding-top: 1rem;
+  font-weight: 600;
 }
-#oe{
-    padding-top: 1rem;
-    font-size: 2.5rem;
+
+.section-header h3::after {
+  width: 80px;
+  height: 4px;
+  left: calc(50% - 40px);
 }
+
+.section-header h3::before {
+  width: 200px;
+  height: 2px;
+  left: calc(50% - 100px);
+}
+
+.section-header{
+  padding-bottom: 4rem;
+}
+
+.poster{
+  width: 600px; 
+  height: 600px;
+  display: block;
+  max-width: 100%;
+  border: 4px ridge var(--theme-color);
+}
+
+.text-desc{
+  font-size: 2.7rem;
+  text-align: left;
+  font-family: 'Scada', sans-serif;
+  font-weight: 600;
+  color: var(--theme-color);
+}
+
+.about-event{
+  text-align: left;
+  font-size: 1.82rem;
+  font-family: 'Scada', sans-serif;
+  font-weight: 300;
+}
+
+.date-calender{
+  text-align: center;
+  font-family: 'Scada', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.btn-register{
+  width: 400px;
+  font-size: 40px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: var(--theme-color);
+  align-items: center;
+  border-radius: 8px !important;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
 .heading {
-    font-family: "Lora", serif;
-    color: var(--theme-color);
-    text-transform: uppercase;
-    font-size: 2.6rem;
-    margin-top: 0.5% !important;
-     font-weight: 700;
-  }
-
-  .img{
-    max-height: 600px !important;
-  }
-  
-  
-[type=radio] {
-  display: none;
+  margin-top: 0.5% !important;
+  font-weight: 300;
+  text-transform: none !important;
 }
 
   /******** new code *********/
@@ -114,11 +122,6 @@
   }
   /************** timeline code ***************/
  /* Reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 ul {
 	list-style: none;
@@ -132,14 +135,6 @@ ul {
 }
 
 /* General */
-body {
-	line-height: 1.6;
-	color: #444;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
-	padding: 35px 15px;
-	letter-spacing: .02em;
-}
 
 h2 {
 	font-size: 20px;
@@ -215,7 +210,7 @@ h2 {
         display:inline-block !important;
         text-align: center;
         justify-content: space-between;
-        color: var(--mainwhite);
+        color: white;
         
       }
       .timeline-title{
@@ -357,11 +352,6 @@ h2 {
  /****************slider code ******************/
 
 
-body {
-  padding: 20px;
-  background: #eee;
-  user-select: none;
-}
 
 [type=radio] {
   display: none;
