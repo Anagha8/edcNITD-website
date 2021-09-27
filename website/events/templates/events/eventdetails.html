@@ -71,7 +71,7 @@
 </div>
 
 <!--SLIDER-->
-<div class="container pad">
+<section id="slider" class="container pad">
   {% for p in images %}
     <!-- <div class="text-center">
         <img class="d-block w-100" src="{{p.images.url}}" alt="First slide">
@@ -82,11 +82,27 @@
   <input type="radio" name="slider" id="s3" checked>
   <input type="radio" name="slider" id="s4">
   <input type="radio" name="slider" id="s5">
-  <label for="s1" id="slide1"></label>
-  <label for="s2" id="slide2"></label>
-  <label for="s3" id="slide3"></label>
-  <label for="s4" id="slide4"></label>
-  <label for="s5" id="slide5"></label>
-</div>
+
+  <label for="s1" id="slide1"> 
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt=".."> 
+  </label>
+
+  <label for="s2" id="slide2"> 
+    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="..">
+  </label>
+
+  <label for="s3" id="slide3"> 
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="..">
+  </label>
+
+  <label for="s4" id="slide4"> 
+    <img src="https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270" alt="..">
+  </label>
+
+  <label for="s5" id="slide5"> 
+    <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt=".."> 
+  </label>
+
+</section>
 
 {% endblock %}  
