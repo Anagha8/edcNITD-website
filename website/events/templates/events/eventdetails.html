@@ -21,10 +21,10 @@
       <hr class="line">
       <p class="text-desc"><i class="fa fa-calendar" aria-hidden="true"></i> Registration Starts: <span class="date-calender">{{event.start_date|date:"d M, Y" }}</span></p>
       <p class="text-desc"><i class="fa fa-calendar" aria-hidden="true"></i> Registration Ends: <span class="date-calender">{{event.end_date|date:"d M, Y" }}</span></p>
+      <p class="text-desc mt-3"><i class="fa fa-calendar" aria-hidden="true"></i> Prizes: <span class="date-calender">{{event.prizes}}</span></p>
       <div class="text-center mt-5">
         <a class="btn btn-register" href="{{event.registration_link}}"><span="btntext">REGISTER HERE</span>&nbsp;&nbsp;<i class="fa fa-1.8x fa-arrow-right" aria-hidden="true"></i></a>
       </div>
-      <p class="text-desc mt-3"><i class="fa fa-calendar" aria-hidden="true"></i> Prizes: <span class="date-calender">{{event.prizes}}</span></p>
   </div>
 </div> 
 
@@ -104,5 +104,4 @@
   </label>
 
 </section>
-
 {% endblock %}  
